@@ -64,6 +64,7 @@ h3, h4{
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   align-items: center;
+  padding: 20px;
 }
 
 /*Item Detail*/
@@ -82,11 +83,10 @@ h3, h4{
   padding: 30px 0;
 }
 
-.details .big-img{
-  height: 300px;
-  width: 400px;
+.details .big-image{
+  width: auto;
   overflow: hidden;
-  margin: 25px;
+  margin: 5px;
 }
 
 .details .box{
@@ -120,10 +120,11 @@ h3, h4{
 .cardDetail-btn {
   display: flex;
   justify-content: center;
+  font-size: 13px;
 }
 
 .addToCart{
-  background: #333;
+  background: rgb(0, 0, 0);
   color: white;
   outline: none;
   border: none;
@@ -144,7 +145,7 @@ h3, h4{
 }
 
 .buy{
-  background: #333;
+  background: rgb(0, 0, 0);
   color: white;
   outline: none;
   border: none;
@@ -164,3 +165,70 @@ h3, h4{
 .buy:active{
     background-color: #18181a;
 }
+
+.buy-cart{
+  background: rgb(0, 0, 0);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 25px;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(121, 118, 118, 0.575);
+  box-shadow: 0 1px 3px rgba(53, 51, 51, 0.3);
+  text-decoration: none;
+}
+
+.buy-cart:hover{
+  background-color: #34333b;
+}
+
+.buy-cart:active{
+    background-color: #18181a;
+}
+
+.dropCart{
+  background: rgb(185, 23, 23);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 25px;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(121, 118, 118, 0.575);
+  box-shadow: 0 1px 3px rgba(53, 51, 51, 0.3);
+  text-decoration: none;
+}
+
+.dropCart:hover{
+  background-color: #a45959;
+}
+
+.dropCart:active{
+    background-color: #553636;
+}
+
+.btn-inicio{
+  background: rgb(0, 0, 0);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 25px;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(121, 118, 118, 0.575);
+  box-shadow: 0 1px 3px rgba(53, 51, 51, 0.3);
+  text-decoration: none;
+}
+
+.btn-inicio:hover{
+  background-color: #383c3a;
+}
+
+.btn-inicio:active{
+    background-color: #237734;
+}
+
