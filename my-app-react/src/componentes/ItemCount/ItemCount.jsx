@@ -3,17 +3,12 @@ import { Link } from "react-router-dom";
 
 
 const ItemCount = ({onAdd, stock}) => {   
-    //const stock = 10;
 
-//Declaramos como valor 1 por default al cargar la página.
     const [count, setCount] = useState(1)
 
-//State para controlar la cantidad de productos que agregamos teniendo en cuenta el stock.
     const [bookStock, setBookStock] = useState(stock);
 
     const [vendido, setVendido] = useState(false);
-
-// Funciones para incrementar y decrementar respectivamente:
 
     const increase = () => {
         if (count < bookStock){
@@ -27,7 +22,6 @@ const ItemCount = ({onAdd, stock}) => {
         }
     }
 
-// Funcion añadir al carrito
 
     const agregarAlCarrito = (quantity) => {
         if (count <= bookStock) {
@@ -38,7 +32,7 @@ const ItemCount = ({onAdd, stock}) => {
         }
     }
 
-//Actualizamos la cantidad disponible de stock.
+
     useEffect(() => {
         setBookStock (stock);
     }, [stock])
